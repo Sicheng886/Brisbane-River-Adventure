@@ -1,0 +1,196 @@
+[{
+        "title": "chapter 1",
+        "content": [{
+            "type": "cap",
+            "word": "Captain: Hi, ${User Name}. Welcome aboard the HF cruise ship, and I am your captain, Wally. On the following trip, I will take you to different places of Brisbane to explore the scenery and history here! \n(click to continue)"
+        }, {
+            "type": "player",
+            "word": "Cool! I can\u2019t wait to start this trip!"
+        }, {
+            "type": "cap",
+            "word": "Captain: Let's start our adventure now! We\u2019re arriving at the first location now! This is Toowong, one inner suburb of Brisbane, which consists of a commercial precinct and some residential areas. "
+        }, {
+            "type": "player",
+            "word": "Wow, it looks like a densely populated area!"
+        }, {
+            "type": "cap",
+            "word": "Captain: Yes, it is! Similarly, can you imagine the scenery here many years ago?"
+        }, {
+            "type": "player",
+            "word": "Emmm\u2026 Few people live here?"
+        }, {
+            "type": "cap",
+            "word": "Captain: Not really. Actually, since the beginning of last century, Toowong was an area where many people live, and their houses were built along the Brisbane River because of the beautiful views."
+        }, {
+            "type": "player",
+            "word": " Wow, so, in last century, Toowong was also supposed to be a lively area."
+        }, {
+            "type": "cap",
+            "word": "Captain: Yes, it is. The album left by the previous captain contains some old photos of Toowong, so, ${User Name}, would you like to guess which one was Toowong in the last century according to the description and the photos I provided? "
+        }, {
+            "type": "player",
+            "word": "Without doubt!"
+        }],
+        "game": [{
+            "type": "question",
+            "word": "Captain: Here they are. Actually, the corresponding photo demonstrates the suburbs panoramic views rivers Brisbane - Suburbs - Toowong, ca. 1932 Toowong (Brisbane, Qld.)"
+        }, {
+            "type": "true",
+            "word": "Captain: Brilliant! This is what it looked like in the last century. I have to say how time flies! Then we will go to the next destination!"
+        }, {
+            "type": "false",
+            "word": "Captain: What a pity! But you can try it one more time!"
+        }, {
+            "type": "ending",
+            "word": "Captain: Now we will go to the next destination! \n(click to continue)"
+        }],
+        "landMark": "img\/Toowong.png"
+    },
+    {
+        "title": "chapter 2",
+        "content": [{
+            "type": "cap",
+            "word": "Captain: Aha! ${User Name} look, we\u2019re now arriving at the second destination! This is Milton, one inner suburb not far from the central business district, which is a mixture of light industry, warehouses and commercial offices. "
+        }, {
+            "type": "player",
+            "word": "Cool, it also looks like a quite modern distinct!"
+        }, {
+            "type": "cap",
+            "word": "Captain: We've already been to Toowong, and I'm sure you have interest of the present and past scenes there. Now we're going to go to the next destination to explore different scenery and history."
+        }, {
+            "type": "player",
+            "word": "Awesome! To be honest, it was a bit shocking to see the old photos about the past scenery there! This makes me more looking forward to the next destination! "
+        }, {
+            "type": "cap",
+            "word": "Captain: That\u2019s true! Again, do you want to guess what it used to be like here?"
+        }, {
+            "type": "player",
+            "word": "Well, maybe it also used to be a relatively developed area?"
+        }, {
+            "type": "cap",
+            "word": "Captain: Yes, you are right. For decades, Milton has been a light industrial and semi-commercial area of Brisbane, where many factories have been built."
+        }, {
+            "type": "player",
+            "word": "Sounds great! So, Milton has always been a well-developed area."
+        }, {
+            "type": "cap",
+            "word": "Captain: Yes. There are also some old photos of Milton in the album, so again, would you like to guess which one was Milton many years ago based on the description and the photos I provided? "
+        }, {
+            "type": "player",
+            "word": "Definitely!"
+        }],
+        "game": [{
+            "type": "question",
+            "word": " Here they are. Actually, the corresponding photo demonstrates the Morrows Biscuit Factory (later to become Arnott Morrows) on River Road (renamed Coronation Drive in 1937), Milton, appears in the foreground."
+        }, {
+            "type": "true",
+            "word": "Captain: Brilliant! This is what it looked like in the last century. I have to say how time flies! Then we will go to the next destination!"
+        }, {
+            "type": "false",
+            "word": "Captain:  What a pity! But you can try it one more time!"
+        }, {
+            "type": "ending",
+            "word": "Captain: OK, ${User Name}. Now we will go to the next destination! \n(click to continue)"
+        }],
+        "landMark": "img\/Milton.png"
+    },
+    {
+        "title": "chapter 3",
+        "content": [{
+            "type": "cap",
+            "word": "Captain: We've halfway through our adventure, and I believe you were impressed by the story and scenery here. Then we will go to a new destination and continue our adventure. "
+        }, {
+            "type": "player",
+            "word": "That's great! Today is a fulfilling day! I feel like I am traveling through a river that connects Brisbane\u2019s past and present."
+        }, {
+            "type": "cap",
+            "word": "Captain: All right, we\u2019re arriving at the third location now! This is Queen Street, one of the famous streets in Brisbane."
+        }, {
+            "type": "player",
+            "word": "Wow, it looks so prosperous!"
+        }, {
+            "type": "cap",
+            "word": "Captain: Yes, it is! Can you imagine what it looked like in last century?"
+        }, {
+            "type": "player",
+            "word": "In last century? It\u2019s quite hard to imagine\u2026"
+        }, {
+            "type": "cap",
+            "word": "Captain: In fact, in the last century, Queen Street was also the commercial centre, and many people would work or do some business here."
+        }, {
+            "type": "player",
+            "word": "Really? So, at that time, the place was also supposed to be quite prosperous."
+        }, {
+            "type": "cap",
+            "word": "Captain: Yes, Once again I have some old photos left by the previous captain, so would you like to guess which one was Queen Street in the last century based on my description and the photos I provided?"
+        }, {
+            "type": "player",
+            "word": "Of course!"
+        }, {
+            "type": "cap",
+            "word": "Captain: Here they are. Actually, the corresponding photo demonstrates the view of the central business area of Queen Street, Brisbane in 1939. Buildings include Bayards, Grand Central Hotel, and 4BC Radio. Trams and motors cars are visible in the street."
+        }],
+        "game": [{
+            "type": "question",
+            "word": "Feel free to attempt! \n(Hint:  Buildings include Bayards, Grand Central Hotel, and 4BC Radio. Trams and motors cars are visible in the street.)"
+        }, {
+            "type": "true",
+            "word": "Captain: Brilliant! This is what it looked like in the last century, and I have to say how time flies!"
+        }, {
+            "type": "false",
+            "word": "Captain: What a pity! But you can try it one more time!"
+        }, {
+            "type": "ending",
+            "word": "Captain: Now we will go to the next destination! \n(click to continue)"
+        }],
+        "landMark": "img\/Queenstreet.png"
+    },
+    {
+        "title": "chapter 4",
+        "content": [{
+            "type": "cap",
+            "word": "Captain: Today's adventure is coming to end, and I hope you enjoy such a novel experience! Now, we are going to the last destination to finish this wonderful journey!"
+        }, {
+            "type": "player",
+            "word": "All three places we have visited today were impressive and I enjoyed the adventure. Let's head for our final destination! "
+        }, {
+            "type": "cap",
+            "word": "Captain: Ok, we\u2019re now arriving at the last destination! This is New Farm Park, one heritage-listed public park in Brisbane, which covers almost 15 hectares."
+        }, {
+            "type": "player",
+            "word": "Amazing, the scenery there looks really refreshing."
+        }, {
+            "type": "cap",
+            "word": "Captain: It does, but the function here is not limited to that, so guess what it used to be like here?"
+        }, {
+            "type": "player",
+            "word": "Well, a kind of agricultural trading markets?"
+        }, {
+            "type": "cap",
+            "word": "Captain: Actually not. In addition to some beautiful scenery, some of the electrical equipment built here used to supply electricity to trams and some suburbs."
+        }, {
+            "type": "player",
+            "word": "What a surprise! In this sense, it used to be a mixed functional area."
+        }, {
+            "type": "cap",
+            "word": "Captain:Yes, you are right. As you must have guessed, old photos of New Farm Park are also included in this album, so would you like to guess which one was New Farm Park based on the description and the photos I provided?"
+        }, {
+            "type": "player",
+            "word": "Aha, why not?"
+        }],
+        "game": [{
+            "type": "question",
+            "word": "Here they are. Actually, the corresponding photo demonstrates the Tramway Power House was built in 1926 on the banks of the Brisbane River at New Farm. Today the remaining parts of building are part of the Brisbane Powerhouse complex, a theatre and entertainment centre."
+        }, {
+            "type": "true",
+            "word": "Captain: Brilliant! This is what it looked like in the last century. I have to say how time flies!"
+        }, {
+            "type": "false",
+            "word": "Captain:  What a pity! But you can try it one more time!"
+        }, {
+            "type": "ending",
+            "word": "Captain: This is the end of our journey, thanks for visiting. ${User Name}, see you next time. If you want, you can go to Gallery to browse my entire album."
+        }],
+        "landMark": "img\/Newfarm.png"
+    }
+]

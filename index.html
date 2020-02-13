@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brisbane River Advanture</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main id="ticket-sec">
+        <section class="ticket-middle">
+            <h2 class="ticket-head">Boat Ticket</h2>
+            <h1>Sailing on Brisbane River</h1>
+            <img src="img/cap1.png" alt="">
+            <h2>St Lucia - New Farm Park</h2>
+        </section>
+        <section class="ticket-right">
+            <h2 class="ticket-head">Boarding Pass</h2>
+            <form action="" method="POST">
+                <div>
+                    <label for="name">NAME</label>
+                </div>
+                <div>
+                    <input type="text" name="name" id="name" class="true-input">
+                </div>
+                <div>
+                    <label for="dep">DEPARTURE</label>
+                </div>
+                <div>
+                    <input type="text" name="dep" id="dep" value="St. Lucia" disabled class="fake-input">
+                </div>
+                <div>
+                    <label for="arr">ARRIVE</label>
+                </div>
+                <div>
+                    <input type="text" name="arr" id="arr" value="New Farm Park" disabled class="fake-input">
+                </div>
+                <button type="submit" id="ticket-btn">START</button>
+            </form>
+        </section>
+    </main>
+
+    <main id="character-sec">
+        <section>
+            <h1>Choose Your Character</h1>
+        </section>
+        <section class="character-row">
+            <img src="img/character/whole_bb.png" alt="" class="whole-character" data-face="img/character/face_bb.png" data-body="img/character/body.png">
+            <img src="img/character/whole_yb.png" alt="" class="whole-character" data-face="img/character/face_yb.png" data-body="img/character/body.png">
+            <img src="img/character/whole_wb.png" alt="" class="whole-character" data-face="img/character/face_wb.png" data-body="img/character/body.png">
+        </section>
+        <section class="character-row">
+            <img src="img/character/whole_bg.png" alt="" class="whole-character" data-face="img/character/face_bg.png" data-body="img/character/body_f.png">
+            <img src="img/character/whole_yg.png" alt="" class="whole-character" data-face="img/character/face_yg.png" data-body="img/character/body_f.png">
+            <img src="img/character/whole_wg.png" alt="" class="whole-character" data-face="img/character/face_wg.png" data-body="img/character/body_f.png">
+        </section>
+        <section>
+            <button id="back-btn">Back</button>
+            <button id="start-btn">Let's Go</button>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Acknowlegement</h4>
+        <p>All the carton graphic are the original work from Team History Fan Club, DECO 7180. Old photos in the album
+            are retrived from State Library of Queensland based on CC BY 4.0</p>
+    </footer>
+    <!--jQuery plug-in is retrived from https://jquery.com/ based on MIT License.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        if(sessionStorage.getItem("user-info")) {
+            window.location.href = "main.html";
+        }
+
+        const playerInfo = {
+            pname:"",
+            face:null,
+            body:null,
+        }
+
+        $("#character-sec").hide();
+        $("#ticket-btn").click(function(event){
+            event.preventDefault();
+            const pname = $("#name").val();
+            if(pname != ""){
+                playerInfo.pname = pname;
+                $("#ticket-sec").hide();
+                $("#character-sec").show();
+            }
+            else {
+                alert("please enter the name!");
+                $(".true-input").addClass("wrong-input");
+            }
+            
+        });
+
+        $("#name").keypress(function() {
+            $(this).removeClass("wrong-input");
+        });
+
+        $(".whole-character").click(function() {
+            $(".whole-character").removeClass("chara-active");
+            $(this).addClass("chara-active");
+            const facesrc = $(this).attr("data-face");
+            const bodysrc = $(this).attr("data-body");
+            playerInfo.face = facesrc;
+            playerInfo.body = bodysrc;
+
+        });
+
+        $("#back-btn").click(function() {
+            $("#ticket-sec").show();
+            $("#character-sec").hide();
+        });
+        
+        $("#start-btn").click(function() {
+            if(playerInfo.face) {
+                sessionStorage.setItem("user-info", JSON.stringify(playerInfo));
+                window.location.href = "main.html";
+            }
+            else {
+                alert("please choose the charater!");
+            }
+        });
+
+
+    </script>
+</body>

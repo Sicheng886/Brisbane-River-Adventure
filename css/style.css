@@ -1,0 +1,601 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(88,178,220,1);
+}
+
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+nav {
+    margin-bottom: 2%;
+}
+
+nav, footer, nav *, footer * {
+    background-color: rgba(43, 95, 117, 1);
+    color: white;
+}
+
+footer {
+    padding: 0 1%;
+    font-size :0.7em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 1.5em;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,1);
+    color: rgba(88,178,220,1);
+    transition: all 0.5s ease;
+}
+
+aside button {
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Following is css for index.html*/
+
+#ticket-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0;
+    
+}
+
+#ticket-sec * {
+    background-color: white;
+}
+
+#ticket-sec .ticket-head {
+    background-color: rgba(43, 95, 117, 1);
+    color: white;
+    padding: 3vh 0;
+    margin: 0;
+    height: 2vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.ticket-middle {
+    text-align: center;
+    border-radius: 20px;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.ticket-middle h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+}
+
+.ticket-middle img {
+    max-width: 30vw;
+}
+
+.ticket-right {
+    border-left: 3px dashed black;
+    border-radius: 20px;
+    width: 30%;
+    font-size: 1.5em;
+}
+
+.ticket-right form {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.true-input {
+    border: 1px solid gray;
+    border-bottom: 2px solid black;
+    font-size: 1em;
+}
+
+.wrong-input {
+    border: 1px solid red;
+    border-bottom: 2px solid red;
+}
+
+.fake-input {
+    border:none;
+    border-bottom: 2px solid black;
+    font-size: 1em;
+}
+
+#ticket-btn {
+    padding: 3%;
+    width: 70%;
+    color: white;
+    font-size: 1.5em;
+    border:none;
+    border-radius: 5px;
+    background-color: rgba(43, 95, 117, 1);
+    margin: 10% 0;
+}
+
+#character-sec {
+    margin: 6% 0;
+}
+
+#character-sec section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.whole-character {
+    max-width: 10%;
+}
+
+.whole-character {
+    margin: 2% 5%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.whole-character:hover {
+    opacity: 0.9;
+    transition: all 0.5s ease;
+
+}
+
+.chara-active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+#back-btn, #start-btn {
+    padding: 1% 3%;
+    margin: 1% 5%;
+    border-radius: 20px;
+    border:none;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#back-btn {
+    background-color: white;
+}
+
+#start-btn {
+    background-color: lightgreen;
+}
+
+/* Following is css for main.html*/
+
+.index-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.index-body aside {
+    width: 12vw;
+    position: absolute;
+    left: -10vw;
+    background:none;
+
+}
+
+#reset-btn, #report-btn {
+    padding: 1%;
+    margin: 0 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    border:none;
+    font-size: 1.1em;
+    color: rgba(43, 95, 117, 1);
+    cursor: pointer;
+}
+
+#reset-btn:hover, #report-btn:hover {
+    font-weight: bold;
+}
+
+.chapter-btn {
+    position: relative;
+    left:8vw;
+    text-align: center;
+    margin: 5%;
+    width: 90%;
+    padding: 1vh 0 1vh 2vw;
+    color: rgba(43, 95, 117, 1);
+    font-weight: bold;
+    background-color: white;
+    border: 5px solid rgba(43, 95, 117, 1);
+    border-radius: 40px;
+}
+
+.deactive {
+    left:0;
+}
+
+.deactive:hover {
+    transition: all 1s ease;
+    left: 8vw;
+}
+
+.update-section, .team-section {
+    color: white;
+    margin: 2%;
+}
+
+.team-section {
+    margin-top: 4%;
+}
+
+.team-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.team-content section {
+    width: 36%;
+    margin: 2% 3%;
+}
+
+#gameSec {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#guess-game {
+    width: 40%;
+    position: relative;
+}
+
+#guess-game h2 {
+    margin: 1% 3%;
+    color: white;
+}
+
+#cover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0 4%;
+    width: 96%;
+    height: 98%;
+}
+
+#cover img {
+    max-height: 100%;
+}
+
+#cover.flipped {
+    animation-name: coverFlipping;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#cover.flipback {
+    animation-name: coverFlipback;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#pic-display {
+    background-color: #DAC9A6;
+    margin: 0 3%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: rotateY(-180deg);
+    opacity: 0;
+}
+
+#pic-display.flipped {
+    animation-name: picFlipping;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#pic-display.flipback {
+    animation-name: picFlipback;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#pic-display > * {
+    background-color: #DAC9A6;
+}
+
+#pic-display img{
+    margin: 2% 3%;
+    max-width: 40%;
+    border: 4px solid #DAC9A6;
+}
+
+#report-form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 25%;
+    top: 15%;
+    background-color: white;
+    width: 50%;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#close-btn {
+    width: 10%;
+    margin: 1%;
+    border:none;
+}
+
+#report-form form {
+    padding: 5%;
+}
+
+#report-form * {
+    background-color: white;
+    display: block;
+}
+
+#report-form input {
+    width: 100%;
+    margin: 1% 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.report-div {
+    background-color: white;
+    margin: 5%;
+    padding: 3%;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.report-div * {
+    background-color: white;
+    color: black;
+}
+
+@keyframes coverFlipping {
+    0% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    50% {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes coverFlipback {
+    0% {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    50% {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes picFlipping {
+    0% {
+        opacity: 0;
+        transform: rotateY(-180deg);
+    }
+    50% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes picFlipback {
+    0% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    50% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: rotateY(-180deg);
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    aside ul {
+        flex-direction: row;
+    }
+    .index-body {
+        flex-direction: column;
+    }
+  }
+
+
+
+/*gallery record*/
+
+.gallery-main {
+    height: 155vh;
+}
+
+.big-container {
+    height: 80vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.records {
+    width: 100%;
+    height: 100%;
+}
+.records-img {
+    max-width: 100%;
+    max-height: 75%;
+}
+
+/* one container for a photo, keeps perspective */
+.flip-container {
+    perspective: 1000;
+    margin: 5px;
+    width: 30%;
+    height: 40%;
+    background: none;
+    overflow: hidden;
+}
+
+.flip-container * {
+    background-color: #DAC9A6;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {  
+	width: 400px;
+    height: 450px;
+    background-color: #DAC9A6;
+}
+
+/* flip speed*/
+.flipper {
+	transition: 1.0s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* setting front and back side*/
+.front {
+	z-index: 2;
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+.footer-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    border-bottom: 2px solid rgba(88,178,220,1);
+}
+
+.page-num-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: none;
+    height: 3vh;
+    align-items: center;
+    font-size: 1.5em;
+    width:45%;
+}
+
+.page-num {
+    text-decoration: underline;
+    padding: 0 1%;
+    cursor: pointer;
+}
+
+.current-page {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#jump-page-num {
+    display: block;
+    width: 10%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 2%;
+    color: black;
+}
+
+#jump-btn {
+    background-color: rgba(88,178,220,1);
+    padding: 1%;
+    width: 5vw;
+    border:2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brisbane River Advanture</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+    <section class="game-menu">
+        <button id="reset-btn">Reset Character</button>
+        <button id="report-btn">Report Wrong Answer</button>
+    </section>
+    <main class="index-body">
+        <aside id="chapter">
+
+        </aside>
+        <section id="gameSec"></section>
+        <section id="guess-game">
+
+            <section id="cover">
+                <img src="img/cover.png" alt="">
+            </section>
+            <section id="pic-display">
+                <h2>Which one of them is right picture?</h2>
+                <img src="img/placeholder.jpg" alt="If they are not showing, please contact the developing team">
+                <img src="img/placeholder.jpg" alt="If they are not showing, please contact the developing team">
+                <img src="img/placeholder.jpg" alt="If they are not showing, please contact the developing team">
+                <img src="img/placeholder.jpg" alt="If they are not showing, please contact the developing team">
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h4>Acknowlegement</h4>
+        <p>All the carton graphic are the original work from Team History Fan Club, DECO 7180. Old photos in the album
+            are retrived from State Library of Queensland based on CC BY 4.0</p>
+    </footer>
+    <section id="report-form">
+        <button id="close-btn">X</button>
+        <form action="">
+            <label for="chapter">Chapter</label>
+            <input type="text" name="chapter" id="form-chapter" disabled>
+            <label for="">Displayed pic(from left to right, top to bottom)</label>
+            <input type="text" name="pic1" id="form-pic1" disabled>
+            <input type="text" name="pic2" id="form-pic2" disabled>
+            <input type="text" name="pic3" id="form-pic3" disabled>
+            <input type="text" name="pic3" id="form-pic4" disabled>
+            <label for="reason">Problem Description</label>
+            <textarea name="reason" id="form-discription" cols="50" rows="10"></textarea>
+            <button type="submit" id="report-submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <!--jQuery plug-in is retrieved from https://jquery.com/ based on MIT License.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--PIXI.js plug-in is retrieved from https://github.com/pixijs/pixi.js?utm_source=html5weekly based on MIT License.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

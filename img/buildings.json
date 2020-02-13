@@ -1,0 +1,44 @@
+{"frames": {
+
+"Milton.png":
+{
+	"frame": {"x":0,"y":0,"w":1568,"h":1171},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1568,"h":1171},
+	"sourceSize": {"w":1568,"h":1171}
+},
+"Newfarm.png":
+{
+	"frame": {"x":1568,"y":0,"w":2048,"h":2056},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":2048,"h":2056},
+	"sourceSize": {"w":2048,"h":2056}
+},
+"Queenstreet.png":
+{
+	"frame": {"x":0,"y":2056,"w":1568,"h":1171},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1568,"h":1171},
+	"sourceSize": {"w":1568,"h":1171}
+},
+"Toowong.png":
+{
+	"frame": {"x":1568,"y":2056,"w":1568,"h":1171},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1568,"h":1171},
+	"sourceSize": {"w":1568,"h":1171}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "buildings.png",
+	"format": "RGBA8888",
+	"size": {"w":3616,"h":3227},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:90205272516772a946281106055acb1a:f35822d90ba982c8beb3f83b21e86b64:8f670863a0ac9ac15291caba2801fd50$"
+}
+}
