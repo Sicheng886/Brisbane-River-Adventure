@@ -2,7 +2,7 @@
         "title": "chapter 1",
         "content": [{
             "type": "cap",
-            "word": "Captain: Hi, ${User Name}. Welcome aboard the HF cruise ship, and I am your captain, Wally. On the following trip, I will take you to different places of Brisbane to explore the scenery and history here! \n(click to continue)"
+            "word": "Captain: Hi, pname. Welcome aboard the HF cruise ship, and I am your captain, Wally. On the following trip, I will take you to different places of Brisbane to explore the scenery and history here! \n(click to continue)"
         }, {
             "type": "player",
             "word": "Cool! I can\u2019t wait to start this trip!"
@@ -26,14 +26,14 @@
             "word": " Wow, so, in last century, Toowong was also supposed to be a lively area."
         }, {
             "type": "cap",
-            "word": "Captain: Yes, it is. The album left by the previous captain contains some old photos of Toowong, so, ${User Name}, would you like to guess which one was Toowong in the last century according to the description and the photos I provided? "
+            "word": "Captain: Yes, it is. The album left by the previous captain contains some old photos of Toowong, so, pname, would you like to guess which one was Toowong in the last century according to the description and the photos I provided? "
         }, {
             "type": "player",
             "word": "Without doubt!"
         }],
         "game": [{
             "type": "question",
-            "word": "Captain: Here they are. Actually, the corresponding photo demonstrates the suburbs panoramic views rivers Brisbane - Suburbs - Toowong, ca. 1932 Toowong (Brisbane, Qld.)"
+            "word": "Captain: Here they are. Actually, the corresponding photo demonstrates the suburbs panoramic views rivers Brisbane - Suburbs - Toowong, ca. 1932 Toowong (Brisbane, Qld.) Click photos to try ➡."
         }, {
             "type": "true",
             "word": "Captain: Brilliant! This is what it looked like in the last century. I have to say how time flies! Then we will go to the next destination!"
@@ -50,7 +50,7 @@
         "title": "chapter 2",
         "content": [{
             "type": "cap",
-            "word": "Captain: Aha! ${User Name} look, we\u2019re now arriving at the second destination! This is Milton, one inner suburb not far from the central business district, which is a mixture of light industry, warehouses and commercial offices. "
+            "word": "Captain: Aha! pname look, we\u2019re now arriving at the second destination! This is Milton, one inner suburb not far from the central business district, which is a mixture of light industry, warehouses and commercial offices. "
         }, {
             "type": "player",
             "word": "Cool, it also looks like a quite modern distinct!"
@@ -90,7 +90,7 @@
             "word": "Captain:  What a pity! But you can try it one more time!"
         }, {
             "type": "ending",
-            "word": "Captain: OK, ${User Name}. Now we will go to the next destination! \n(click to continue)"
+            "word": "Captain: OK, pname. Now we will go to the next destination! \n(click to continue)"
         }],
         "landMark": "img\/Milton.png"
     },
@@ -189,7 +189,7 @@
             "word": "Captain:  What a pity! But you can try it one more time!"
         }, {
             "type": "ending",
-            "word": "Captain: This is the end of our journey, thanks for visiting. ${User Name}, see you next time. If you want, you can go to Gallery to browse my entire album."
+            "word": "Captain: This is the end of our journey, thanks for visiting. pname, see you next time. If you want, you can go to Gallery to browse my entire album."
         }],
         "landMark": "img\/Newfarm.png"
     }

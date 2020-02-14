@@ -70,6 +70,7 @@ app.loader
         playerInfo.face,
         playerInfo.body,
         "img/start.png",
+        "img/continue.png",
         "img/end.png",
     ])
     .load((loader, resources) => {
@@ -202,13 +203,24 @@ app.loader
         app.stage.addChild(start);
         gameControl.startMark = start;
 
+        const continueSign = new Sprite(resources["img/continue.png"].texture);
+        continueSign.anchor.x = 0.5;
+        continueSign.anchor.y = 0.5;
+        continueSign.position.set(viewWidth / 2, viewHeight / 2);
+        app.stage.addChild(continueSign);
+        continueSign.visible = false;
+        gameControl.continueMark = continueSign;
+
+        const endScene = new Container();
+        app.stage.addChild(endScene);
+        endScene.visible = false;
+        gameControl.endMark = endScene;
+
         const end = new Sprite(resources["img/end.png"].texture);
         end.anchor.x = 0.5;
         end.anchor.y = 0.5;
         end.position.set(viewWidth / 2, viewHeight / 2);
-        app.stage.addChild(end);
-        end.visible = false;
-        gameControl.endMark = end;
+        endScene.addChild(end);
 
         gameControl.state = movingLoop;
 
@@ -248,11 +260,11 @@ function talkingLoop(delta) {
     //changing content of dialog box by clicking
     if (gameControl.chapterData.content && gameControl.dialogIndex < gameControl.chapterData.content.length) {
         if (gameControl.chapterData.content[gameControl.dialogIndex]["type"] == "cap") {
-            gameControl.textOnScreenData.capText.text = gameControl.chapterData.content[gameControl.dialogIndex]["word"];
+            gameControl.textOnScreenData.capText.text = getPersonalSentence(gameControl.chapterData.content[gameControl.dialogIndex]["word"]);
             gameControl.textOnScreenData.capContainer.visible = true;
             gameControl.textOnScreenData.playerContainer.visible = false;
         } else {
-            gameControl.textOnScreenData.playerText.text = gameControl.chapterData.content[gameControl.dialogIndex]["word"];
+            gameControl.textOnScreenData.playerText.text = getPersonalSentence(gameControl.chapterData.content[gameControl.dialogIndex]["word"]);
             gameControl.textOnScreenData.playerContainer.visible = true;
             gameControl.textOnScreenData.capContainer.visible = false;
         }
@@ -276,23 +288,26 @@ function guessingLoop(delta) {
 
     if (gameControl.answer) {
         if (gameControl.answer === "false") {
-            gameControl.textOnScreenData.capText.text = gameControl.chapterData.game[2]["word"];
+            gameControl.textOnScreenData.capText.text = getPersonalSentence(gameControl.chapterData.game[2]["word"]);
         } else if (gameControl.answer === "true") {
-            gameControl.textOnScreenData.capText.text = gameControl.chapterData.game[1]["word"];
+            gameControl.textOnScreenData.capText.text = getPersonalSentence(gameControl.chapterData.game[1]["word"]);
             setTimeout(function () {
                 gameControl.answer = "done";
                 gameControl.dialogIndex = 0;
             }, 2000);
         } else if (gameControl.dialogIndex == 0) {
-            gameControl.textOnScreenData.capText.text = gameControl.chapterData.game[3]["word"];
+            gameControl.textOnScreenData.capText.text = getPersonalSentence(gameControl.chapterData.game[3]["word"]);
         } else {
             gameControl.textOnScreenData.playerContainer.visible = false;
             gameControl.textOnScreenData.capContainer.visible = false;
             gameControl.answer = null;
+            gameControl.startMark = gameControl.continueMark;
+            gameControl.startMark.visible =true;
+            gameControl.goalPosition = gameControl.actualPosition;
             gameControl.state = afterGuessingLoop;
         }
     } else {
-        gameControl.textOnScreenData.capText.text = gameControl.chapterData.game[0]["word"];
+        gameControl.textOnScreenData.capText.text = getPersonalSentence(gameControl.chapterData.game[0]["word"]);
     }
 }
 
@@ -309,7 +324,7 @@ function resetLoop(delta) {
 
 function moveForward(minRange, maxRange, nextFunction) {
     //main functions control moving
-    if (gameControl.actualPosition > minRange) {
+    if (gameControl.actualPosition > minRange+20) {
         gameControl.startMark.visible = false;
     }
 
@@ -409,6 +424,7 @@ async function updateChapterData(chapter) {
                 gameControl.buildingContainer.addChild(currentBuilding);
                 gameControl.currentBuilding = currentBuilding;
             });
+            gameControl.endMark.visible = false;
         }
 
     } catch (error) {
@@ -482,6 +498,9 @@ function resetGame(chapter = null) {
         updateChapterData(gameControl.chapter);
         gameControl.state = movingLoop;
     }
+    else {
+        gameControl.endMark.visible = true;
+    }
 }
 
 async function uploadReport(report) {
@@ -500,6 +519,14 @@ async function uploadReport(report) {
         alert(error);
     }
 }
+
+
+function getPersonalSentence(word) {
+    const pname = playerInfo.pname;
+    // RegExp to replace "pname" keyword into real player nickname
+    return word.replace(/\bpname\b/g, pname);
+}
+
 
 $("#reset-btn").click(function () {
     sessionStorage.removeItem("user-info");
